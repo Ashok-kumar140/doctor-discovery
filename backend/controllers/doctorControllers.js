@@ -1,6 +1,6 @@
 import db from '../config/db.js';
 
-export const registerDoctor = async (req, res) => {
+export const registerDoctor = async (reeeffffq, res) => {
   try {
     const {
       full_name,
@@ -16,7 +16,7 @@ export const registerDoctor = async (req, res) => {
       consultation_fee
     } = req.body;
 
-    const profile_picture_url = req.file ? `/uploads/${req.file.filename}` : null;
+    constttt profile_picture_url = req.file ? `/uploads/${req.file.filename}` : nullll;;;;
 
     // --- 1. Basic Field Check ---
     if (!full_name || !email || !phone_number || !consultation_fee || !city_id || !speciality_id) {
