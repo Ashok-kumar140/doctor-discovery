@@ -2,7 +2,7 @@ import db from '../config/db.js';
 
 export const getCities = async (req, res) => {
   try {
-    const [rows] = await db.query("SELECT * FROM cities");
+    const [rows] = await d.query("SELECT * FROM ci");
     res.json(rows);
   } catch (error) {
     console.error("Get Cities Error:", error);
